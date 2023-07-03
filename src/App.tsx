@@ -8,38 +8,55 @@ const urlPre = location.href.includes("friends233.github.io")
 const GameFrameUrlList = [
   {
     url: urlPre + "/src/cocos1010/index.html",
-    name: "1010",
-    img: urlPre + "/src/cocos1010/1010.png",
+    name: "cocos1010",
+    img: urlPre + "/src/gameImg/1010.png",
   },
   {
     url: urlPre + "/src/cocosGoldenMiner/index.html",
-    name: "黄金矿工",
-    img: urlPre + "/src/cocosGoldenMiner/goldenMiner.png",
+    name: "cocos黄金矿工",
+    img: urlPre + "/src/gameImg/goldenMiner.png",
+  },
+  {
+    url: "https://friends233.github.io/CocosAircraftWar/",
+    name: "cocos飞机大战demo",
+    img: urlPre + "/src/gameImg/aircraftWar.png",
+  },
+  {
+    url: "https://friends233.github.io/emojiAndEmoji/",
+    name: "egret羊了个羊demo",
+    img: urlPre + "/src/gameImg/羊了个羊.png",
+  },
+  {
+    url: "https://friends233.github.io/javascript-game-2048/",
+    name: "原生js实现2048",
+    img: urlPre + "/src/gameImg/2048.png",
   },
 ];
 
 function App() {
   const [gameFrameUrl, setGameFrameUrl] = useState("");
   return (
-    <div>
-      <h4 className="game-title">
-        欢迎来到Friends233的小游戏，请用手机打开预览
-      </h4>
+    <div className="view-body">
       {gameFrameUrl ? (
         <GameTest url={gameFrameUrl} closeGame={() => setGameFrameUrl("")} />
       ) : (
-        GameFrameUrlList.map(({ name, url, img }, i) => {
-          return (
-            <div
-              className="game-list"
-              key={i + "game-btn"}
-              onClick={() => setGameFrameUrl(url)}
-            >
-              <img src={img} alt="" className="game-img"></img>
-              <div className="game-btn">{name}</div>
-            </div>
-          );
-        })
+        <>
+          <h4 className="game-title">
+            欢迎来到Friends233的小游戏，请用手机打开预览
+          </h4>
+          {GameFrameUrlList.map(({ name, url, img }, i) => {
+            return (
+              <div
+                className="game-list"
+                key={i + "game-btn"}
+                onClick={() => setGameFrameUrl(url)}
+              >
+                <img src={img} alt="" className="game-img"></img>
+                <div className="game-btn">{name}</div>
+              </div>
+            );
+          })}
+        </>
       )}
     </div>
   );

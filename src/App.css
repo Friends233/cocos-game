@@ -1,3 +1,10 @@
+.view-body{
+  background-color: azure;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
 .game-list{
   width: 30vw;
   /* background-color: antiquewhite; */
@@ -5,8 +12,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 30px auto;
 }
 .game-img{
   width: 100%;
@@ -15,6 +21,7 @@
 
 .game-btn{
   margin-top: 10px;
+  text-align: center;
 }
 
 .game-title{
