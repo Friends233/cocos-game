@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocos Game</title>
+    <script type="module" crossorigin src="./assets/index-06da6e38.js"></script>
+    <link rel="stylesheet" href="./assets/index-183aed6a.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="splash">
+      <div class="progress-bar stripes">
+        <span style="width: 0%"></span>
+      </div>
+    </div>
+    
+    <!-- <script src="src/game/web-mobile/src/settings.js" charset="utf-8"></script>
+
+    <script src="src/game/web-mobile/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      (function () {
+        // open web debugger console
+        if (typeof VConsole !== "undefined") {
+          window.vConsole = new VConsole();
+        }
+
+        var debug = window._CCSettings.debug;
+
+        function loadScript(moduleName, cb) {
+          function scriptLoaded() {
+            document.body.removeChild(domScript);
+            domScript.removeEventListener("load", scriptLoaded, false);
+            cb && cb();
+          }
+          var domScript = document.createElement("script");
+          domScript.async = true;
+          domScript.src = moduleName;
+          domScript.addEventListener("load", scriptLoaded, false);
+          document.body.appendChild(domScript);
+        }
+
+        loadScript(debug ? "web-mobile/cocos2d-js.js" : "web-mobile/cocos2d-js-min.js", function () {
+          if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+            loadScript(debug ? "web-mobile/physics.js" : "web-mobile/physics-min.js", window.boot);
+          } else {
+            // window.boot();
+          }
+        });
+      })();
+    </script> -->
+  </body>
+</html>
