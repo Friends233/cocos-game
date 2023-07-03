@@ -1,0 +1,23 @@
+.game-list{
+  width: 30vw;
+  /* background-color: antiquewhite; */
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.game-img{
+  width: 100%;
+  flex: 1;
+}
+
+.game-btn{
+  margin-top: 10px;
+}
+
+.game-title{
+  margin: 30px auto;
+  text-align: center;
+}
