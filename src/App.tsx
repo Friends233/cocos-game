@@ -16,17 +16,17 @@ const GameFrameUrlList = [
     img: baseUrl + '/gameImg/goldenMiner.png',
   },
   {
-    url: 'https:/friends233.github.io/CocosAircraftWar/',
+    url: '/CocosAircraftWar/',
     name: 'cocos飞机大战demo',
     img: baseUrl + '/gameImg/aircraftWar.png',
   },
   {
-    url: 'https:/friends233.github.io/emojiAndEmoji/',
+    url: '/emojiAndEmoji/',
     name: 'egret羊了个羊demo',
     img: baseUrl + '/gameImg/羊了个羊.png',
   },
   {
-    url: 'https:/friends233.github.io/javascript-game-2048/',
+    url: '/javascript-game-2048/',
     name: '原生js实现2048',
     img: baseUrl + '/gameImg/2048.png',
   },
