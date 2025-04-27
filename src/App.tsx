@@ -5,29 +5,29 @@ import GameList from "./pages/GameList";
 
 const GameFrameUrlList = [
   {
-    url: "public/game/cocos1010/index.html",
+    url: "/game/cocos1010/index.html",
     name: "cocos1010",
     img: "public/gameImg/1010.png",
   },
   {
-    url: "public/game/cocosGoldenMiner/index.html",
+    url: "/game/cocosGoldenMiner/index.html",
     name: "cocos黄金矿工",
-    img: "public/gameImg/goldenMiner.png",
+    img: "/gameImg/goldenMiner.png",
   },
   {
     url: "https:/friends233.github.io/CocosAircraftWar/",
     name: "cocos飞机大战demo",
-    img: "public/gameImg/aircraftWar.png",
+    img: "/gameImg/aircraftWar.png",
   },
   {
     url: "https:/friends233.github.io/emojiAndEmoji/",
     name: "egret羊了个羊demo",
-    img: "public/gameImg/羊了个羊.png",
+    img: "/gameImg/羊了个羊.png",
   },
   {
     url: "https:/friends233.github.io/javascript-game-2048/",
     name: "原生js实现2048",
-    img: "public/gameImg/2048.png",
+    img: "/gameImg/2048.png",
   },
 ];
 
