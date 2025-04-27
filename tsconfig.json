@@ -21,6 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/game/game.tsx"],
+  "include": ["src", "src/game/game.tsx", "public/game/cocos1010", "public/game/cocosGoldenMiner"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

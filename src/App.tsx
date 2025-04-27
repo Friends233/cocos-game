@@ -3,34 +3,31 @@ import "./App.css";
 import GameTest from "./game/game";
 import GameList from "./pages/GameList";
 
-const urlPre = location.href.includes("friends233.github.io")
-  ? "/cocos-game"
-  : "";
 const GameFrameUrlList = [
   {
-    url: urlPre + "/src/cocos1010/index.html",
+    url: "public/game/cocos1010/index.html",
     name: "cocos1010",
-    img: urlPre + "/src/gameImg/1010.png",
+    img: "public/gameImg/1010.png",
   },
   {
-    url: urlPre + "/src/cocosGoldenMiner/index.html",
+    url: "public/game/cocosGoldenMiner/index.html",
     name: "cocos黄金矿工",
-    img: urlPre + "/src/gameImg/goldenMiner.png",
+    img: "public/gameImg/goldenMiner.png",
   },
   {
-    url: "https://friends233.github.io/CocosAircraftWar/",
+    url: "https:/friends233.github.io/CocosAircraftWar/",
     name: "cocos飞机大战demo",
-    img: urlPre + "/src/gameImg/aircraftWar.png",
+    img: "public/gameImg/aircraftWar.png",
   },
   {
-    url: "https://friends233.github.io/emojiAndEmoji/",
+    url: "https:/friends233.github.io/emojiAndEmoji/",
     name: "egret羊了个羊demo",
-    img: urlPre + "/src/gameImg/羊了个羊.png",
+    img: "public/gameImg/羊了个羊.png",
   },
   {
-    url: "https://friends233.github.io/javascript-game-2048/",
+    url: "https:/friends233.github.io/javascript-game-2048/",
     name: "原生js实现2048",
-    img: urlPre + "/src/gameImg/2048.png",
+    img: "public/gameImg/2048.png",
   },
 ];
 
