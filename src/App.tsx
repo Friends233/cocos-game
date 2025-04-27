@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import GameTest from "./game/game";
+import GameList from "./pages/GameList";
 
 const urlPre = location.href.includes("friends233.github.io")
   ? "/cocos-game"
@@ -35,6 +36,7 @@ const GameFrameUrlList = [
 
 function App() {
   const [gameFrameUrl, setGameFrameUrl] = useState("");
+  return <GameList GameFrameUrlList={GameFrameUrlList} />
   return (
     <div className="view-body">
       {gameFrameUrl ? (
@@ -42,8 +44,9 @@ function App() {
       ) : (
         <>
           <h4 className="game-title">
-            欢迎来到Friends233的小游戏，请用手机打开预览
+            Friends233的小游戏
           </h4>
+          <div className="game-subtitle">请用手机打开预览</div>
           {GameFrameUrlList.map(({ name, url, img }, i) => {
             return (
               <div
